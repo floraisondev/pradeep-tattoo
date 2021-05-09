@@ -1,17 +1,19 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import Hero from "../components/Hero"
+import Hero from "../components/sections/hero"
+import Speciality from "../components/sections/speciality"
 import "@fontsource/oswald"
 import "@fontsource/oswald/700.css"
+import "@fontsource/montserrat"
 
 const IndexPage = () => {
   return (
-    
-    <main>
-      <Layouy />
-      <h1>Nav</h1>
+
+     <Layout>
       <Hero />
-    </main>
+      <Speciality />
+     </Layout>
+ 
   )
 }
 
