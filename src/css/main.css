@@ -508,12 +508,12 @@ Variables
   ============ */
   .speciality{
     background :linear-gradient(239.94deg, #2b2929 -12.77%, #000000 102.42%);
-    height: 80vh;
+    
   }
   
   .speciality-title{
     font-family: Montserrat;
-    color : #fff;
+    color : rgb(253, 247, 247);
   }
 
   .speciality-title-container{
@@ -525,14 +525,71 @@ Variables
 
   .speciality-container{
     display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin : 0 auto;
+    border-left: 3px solid  rgb(168, 165, 165);
+    margin-top : 5rem;
   }
 
   .speciality-box{
     border-radius: 41px;
-background: #2b2929;
-box-shadow:  20px 20px 50px #1c1b1b,
+    background: #2b2929;
+    box-shadow:  20px 20px 50px #1c1b1b,
              -20px -20px 50px #3a3737;
+    height: 500px;
+    width: 500px;
   }
+
+  /* ===============
+  Timeline
+  =============== */
+  
+.dot{
+  color : #ffa700;
+  height: 30px;
+  width: 30px;
+  position: sticky;
+  margin-left: -15px;  
+}
+
+.timeline-arrow{
+  color : #ffffff;
+  height: 30px;
+  width: 30px;
+}
+
+.timeline-title{
+  font-family: Montserrat;
+  color : rgb(168, 165, 165);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-top: -2rem;
+}
+
+.timeline-content{
+  color : rgb(202, 198, 198);
+  max-width: 70%;
+  letter-spacing: normal;
+  line-height: 1.4; 
+  margin : 1.2rem 3rem;
+  font-family: Montserrat;
+}
+
+.timeline-image{
+  margin : 1.2rem 3rem;
+}
+
+@media screen and (max-width: 676px) {
+  .speciality-container{
+    width: 85vw;
+  }
+}
+
+
+
+
   /*
   =============== 
   Services

@@ -1,13 +1,14 @@
 import React from "react"
 import "./../../css/main.css"
-import TimeLine from "../../constants/timeline"
-const Speciality = () => {    
+import { StaticImage } from "gatsby-plugin-image"
+const letsGetWorking = () => {    
     return(
     <header className="speciality">
         <div>
             <article>
                 <div className="underline"> </div>
                 <div className="section-center">
+                <StaticImage src="../../images/tattoo-guy.png" />
                 <div className="yellow-ellipse">
                 <svg width="167" height="167" 
                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 167 167" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,16 +16,14 @@ const Speciality = () => {
                </svg>
                 </div> 
                <div className="speciality-title-container">
-               <h2 className="speciality-title">My</h2>
-               <h1 className="speciality-title">Speciality</h1>
+               <h2 className="speciality-title">Let's Get</h2>
+               <h1 className="speciality-title">Working!</h1>
+               
                </div>  
             </div>    
-            </article>
-            <article className="speciality-container">
-             <TimeLine />
-            </article>          
+            </article>       
         </div>
     </header>
     )
 }
-export default Speciality
+export default letsGetWorking

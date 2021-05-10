@@ -12,8 +12,6 @@ const Hero = () => {
                     <h2 className="title-class">Celebrity Tatoo Artist</h2>
                     <h4 className="subtitle-class">Temporary and Permanent Tattoos</h4>
             </article>
-        
-
             <StaticImage src = "../../images/landing-page-girl.png" className="hero-img" /> 
         </div>
     </header>
