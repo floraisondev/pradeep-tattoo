@@ -588,7 +588,52 @@ Variables
 }
 
 
+/*
+=================
+letsGetWorking
+=================
+*/
 
+.lets-get-working{
+  background : #000000;
+  height: auto;
+}
+.lets-get-working-center{
+  display : flex;
+  justify-content: space-between;
+}
+.book-now-btn{
+  padding: 0.8em 2em;
+  background: rgb(254,204,109);
+  background: radial-gradient(circle, rgba(254,204,109,1) 20%, rgba(255,172,15,1) 63%, rgba(255,167,0,1) 70%);
+  border-radius: 7px;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: Montserrat;
+  font-weight: bold;
+  border-color: transparent;
+  cursor: pointer;
+  margin : 1.2rem;
+}
+.book-now-btn:hover{
+  background: rgb(255, 196, 0);
+background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
+}
+.lets-get-working-text{
+   margin-left: 15%;
+}
+/* .end-title{
+  margin-top : -8rem;
+} */
+
+.end-content{
+  color : rgb(202, 198, 198);
+  max-width: 80%;
+  letter-spacing: normal;
+  line-height: 1.4; 
+  margin : 1.2rem auto;
+  font-family: Montserrat;
+}
 
   /*
   =============== 
