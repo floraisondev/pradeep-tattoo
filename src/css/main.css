@@ -38,8 +38,8 @@ Variables
     --clr-red-dark: hsl(360, 67%, 44%);
     --clr-red-light: hsl(360, 71%, 66%);
     --clr-white: #fff;
-    --ff-primary: "Roboto", sans-serif;
-    --ff-secondary: "Open Sans", sans-serif;
+    --ff-primary: "Montserrat", sans-serif;
+    --ff-secondary: "Montserrat", sans-serif;
     --transition: all 0.3s linear;
     --spacing: 0.2rem;
     --radius: 0.25rem;
@@ -87,7 +87,7 @@ Variables
   
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: Oswald;
   }
   h2 {
@@ -192,18 +192,18 @@ Variables
   
   /* social links */
   .social-links {
-    margin-top: 2rem;
+    margin: 0 2rem;
     width: 15rem;
     display: flex;
     justify-content: space-between;
   }
   .social-link {
     font-size: 1.75rem;
-    color: var(--clr-grey-1);
+    color: rgb(168, 168, 168);
     transition: var(--transition);
   }
   .social-link:hover {
-    color: var(--clr-primary-5);
+    color: #ffa700;
   }
   /* ============
   Typography
@@ -294,18 +294,14 @@ Variables
     }
   }
   
-  @media screen and (min-width: 992px) {
-    .navbar {
-      background: transparent;
-    }
-  }
+ 
   /*
   =============== 
   Sidebar
   ===============
   */
   .sidebar {
-    background: var(--clr-grey-10);
+    background: #000000;
     position: fixed;
     top: 0;
     left: 0;
@@ -329,7 +325,7 @@ Variables
     display: block;
     text-align: center;
     text-transform: capitalize;
-    color: var(--clr-grey-5);
+    color: rgb(168, 168, 168);
     letter-spacing: var(--spacing);
     margin-bottom: 0.5rem;
     font-size: 2rem;
@@ -337,18 +333,21 @@ Variables
     border-radius: var(--radius);
   }
   .sidebar-links li a:hover {
-    background: var(--clr-primary-9);
-    color: var(--clr-primary-5);
+    background : #252323;
+    color: #ffa700;
   }
   .close-btn {
     position: absolute;
-    right: 4.75%;
+    right: 4.75%; 
     top: 2.75%;
     font-size: 2.5rem;
     background: transparent;
     border-color: transparent;
-    color: var(--clr-red-dark);
+    color: rgb(168,168,168);
     cursor: pointer;
+  }
+  .sidebar-icons{
+    color: #fff;
   }
   @media screen and (min-width: 992px) {
     .sidebar {
@@ -507,8 +506,7 @@ Variables
   Speciality
   ============ */
   .speciality{
-    background :linear-gradient(239.94deg, #2b2929 -12.77%, #000000 102.42%);
-    
+    background :linear-gradient(239.94deg, #2b2929 -12.77%, #000000 102.42%); 
   }
   
   .speciality-title{
@@ -598,6 +596,7 @@ letsGetWorking
   background : #000000;
   height: auto;
 }
+
 .lets-get-working-center{
   display : flex;
   justify-content: space-between;
@@ -628,11 +627,12 @@ background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
 
 .end-content{
   color : rgb(202, 198, 198);
-  max-width: 80%;
-  letter-spacing: normal;
-  line-height: 1.4; 
+  max-width: 90%;
+  letter-spacing: 2px;
+  line-height: 1.5; 
   margin : 1.2rem auto;
   font-family: Montserrat;
+
 }
 
   /*
@@ -981,20 +981,21 @@ background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
   ===============
   */
   .footer {
-    height: 9rem;
-    background: #222;
+    height: auto;
+    background: linear-gradient(239.94deg, #201f1f -12.77%, #000000 102.42%); 
     text-align: center;
-    display: grid;
+    display: grid; 
     place-items: center;
   }
   .footer h4 {
     margin-top: 0.5rem;
     color: var(--clr-white);
     font-weight: normal;
-    text-transform: uppercase;
+    font-family: Montserrat;
   }
-  .footer h4 span {
-    color: var(--clr-primary-5);
+  .footer span {
+    color: #696767;
+   
   }
   .footer-links {
     margin: 0 auto 1rem auto;
@@ -1003,7 +1004,7 @@ background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
     color: var(--clr-white);
   }
   .footer .social-link:hover {
-    color: var(--clr-primary-5);
+    color: #ffa700;
   }
   /*
   ===============
