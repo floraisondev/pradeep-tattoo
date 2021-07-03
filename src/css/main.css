@@ -103,7 +103,7 @@ Variables
   }
   p {
     margin-bottom: 1.25rem;
-    color: var(--clr-grey-3);
+    color: rgb(168,168,168);
   }
   @media screen and (min-width: 800px) {
     h1 {
@@ -1017,8 +1017,8 @@ background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
   .error-page,
   .about-page,
   .contact-page {
-    background: var(--clr-grey-10);
-    min-height: calc(100vh - 5rem - 9rem);
+    background: #000000;
+    /* min-height: calc(100vh - 5rem - 9rem); */
   }
   .error-page {
     display: grid;
@@ -1046,10 +1046,12 @@ background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
   */
   .about-page {
     padding: 7rem 0;
+    background :linear-gradient(239.94deg, #2b2929 -12.77%, #000000 102.42%);
   }
   .about-img {
-    margin-bottom: 2rem;
-    height: 25rem;
+    height: 20rem;
+    border-radius: 50px;
+    border : 2px solid #ffa700
   }
   .about-text .section-title {
     margin-bottom: 2rem;
@@ -1062,37 +1064,40 @@ background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
   .about-text p {
     line-height: 2;
   }
-  .stack-container {
-    width: 30rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 0.5rem;
-  }
-  .stack-container span {
+  .about-title{
+    margin-top: -8rem;
+    margin-bottom: 3rem;
+    font-size: 6rem;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
-    color: var(--clr-grey-4);
+    opacity: 0.8;
   }
-  .stack-icon {
-    color: var(--clr-primary-5);
-    margin-right: 0.25rem;
-    font-size: 1rem;
+  .about-para{
+    border-radius: 18px;
+    background: #2b2929;
+    box-shadow: inset -9px -9px 18px #222020,
+                inset 9px 9px 18px #343232;
+    padding: 1em 2.5em;
+    /* width: 50%; */
   }
+ 
   @media screen and (min-width: 992px) {
     .about-center {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       align-items: center;
       column-gap: 4rem;
+     
+      /* display: flex;
+      justify-content: space-between; */
     }
     .about-img {
       grid-column: 1 / span 5;
       margin-bottom: 0;
+       
+      
     }
     .about-text {
-      grid-column: 6 / -1;
+      grid-column: 6 / -1; 
     }
   }
   /*
