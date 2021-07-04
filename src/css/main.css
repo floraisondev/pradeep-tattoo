@@ -635,6 +635,48 @@ background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
 
 }
 
+/* ===============
+Gallery
+=============== */
+.container{
+  width: 80%;
+  margin : auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap : 10px
+}
+
+image-card {
+  padding : 5px;
+}
+
+.tags {
+  text-align: center;
+  background-color: transparent;
+  display : flex;
+  flex-direction: column;
+}
+
+.tag{
+
+  margin : 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*
   =============== 
   Services
@@ -1083,22 +1125,14 @@ background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
   @media screen and (min-width: 992px) {
     .about-center {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       align-items: center;
-      column-gap: 4rem;
+      gap : 40px;
      
       /* display: flex;
       justify-content: space-between; */
     }
-    .about-img {
-      grid-column: 1 / span 5;
-      margin-bottom: 0;
-       
-      
-    }
-    .about-text {
-      grid-column: 6 / -1; 
-    }
+   
   }
   /*
   ===============

@@ -1,11 +1,16 @@
 import React from "react"
 import "../css/main.css"
+import Gallery from "../components/gallery"
 import Layout from "../components/Layout"
+import SimpleReactLightbox from "simple-react-lightbox"
 const Work = () => {    
  
     return(
   <Layout>
- <h1>About</h1>
+  <SimpleReactLightbox>
+  <Gallery />
+  </SimpleReactLightbox>
+
     </Layout>
     )
 }
