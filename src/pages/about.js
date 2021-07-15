@@ -14,7 +14,7 @@ const About = () => {
         </svg>
         <h1 className="speciality-title about-title">About me</h1>
         </div>
-      <div style = {{ display : "flex", justifyContent : "space-between"}}>
+      <div className = "about-container">
 
        <StaticImage src = "../images/pradeep-yash.jpg" height = {200} width = {270} className = "about-img" />  
        <p className="about-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  </p>

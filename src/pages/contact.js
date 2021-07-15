@@ -6,7 +6,7 @@ const Contact = () => {
     return(
   <Layout>
 <section style = {{ height : "70vh", background : "#000"}}>
- <h1 className= "title-class" style={{ textAlign: "center"}}>Contact</h1>
+ 
  <div style = {{ display : "flex", justifyContent : "space-evenly"}}>
    <div>
      <h2 className= "title-class">Studio Address</h2>
