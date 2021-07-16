@@ -1,5 +1,6 @@
 import React from "react"
 import "./../../css/main.css"
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image"
 import letsGetWorkingParagraph from "../../constants/paragraphs"
 const letsGetWorking = () => {    
@@ -35,7 +36,7 @@ const letsGetWorking = () => {
                    approved, non toxic tattoo inks to 
                     celebrity, kids and clients.
                     </p>
-             <button className="book-now-btn">Book Now</button>
+                    <Link to="/contact/"> <button className="book-now-btn">Book Now</button></Link>   
      </article>  
      </div>      
     </header>
