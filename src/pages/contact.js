@@ -1,24 +1,26 @@
 import React from "react"
 import "../css/main.css"
 import Layout from "../components/Layout"
+import Accordion from "../components/Accordion"
+
+
 const Contact = () => {    
- 
     return(
   <Layout>
-<section style = {{ height : "70vh", background : "#000"}}>
- 
- <div style = {{ display : "flex", justifyContent : "space-evenly"}}>
-   <div>
-     <h2 className= "title-class">Studio Address</h2>
-     <p>205, Block 5, Skyline City Appt</p>
-     <p>Chandralyout, Bengaluru. 560073</p>
-     <p>Contact : +(91) 982564322</p>
+<section style = {{background : "#000", height: "73vh", overflowY : "scroll"}} className="contact-page">
+<Accordion />
+ <div className="address">
+   <div className="mrb25">
+     <h4 className= "title-class">Studio Address</h4>
+     <p>205, Block 5, Skyline City Appt,<br/> Chandralyout
+      Bengaluru. 560073<br/>
+      Contact : +(91) 982564322</p>
    </div>
-   <div>
-   <h2 className= "title-class">Permanent Adress</h2>
-     <p>205, Block 5, Skyline City Appt</p>
-     <p>Chandralyout, Bengaluru. 560073</p>
-     <p>Contact : +(91) 982564322</p>
+   <div className="mrb25">
+   <h4 className= "title-class">Permanent Adress</h4>
+     <p>205, Block 5, Skyline City Appt<br/>
+     Chandralyout, Bengaluru. 560073<br/>
+     Contact : +(91) 982564322</p>
    </div>
  </div>
  </section>
