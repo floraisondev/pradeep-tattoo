@@ -1,7 +1,11 @@
-import React from "react"
+import React, {useEffect} from "react"
 import "./../../css/main.css"
 import TimeLine from "../../constants/timeline"
-const Speciality = () => {    
+import Aos from "aos"
+const Speciality = () => {   
+    useEffect(()=>{
+        Aos.init({duration:1000})
+    })   
     return(
     <header className="speciality">
         <div>
@@ -15,8 +19,8 @@ const Speciality = () => {
                </svg>
                 </div> 
                <div className="speciality-title-container">
-               <h2 className="speciality-title">My</h2>
-               <h1 className="speciality-title">Speciality</h1>
+               <h2 className="speciality-title" data-aos="fade-left">My</h2>
+               <h1 className="speciality-title" data-aos="fade-left">Speciality</h1>
                </div>  
             </div>    
             </article>

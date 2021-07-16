@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React, {useEffect, useState} from "react"
 import "../css/main.css"
+import Aos from "aos"
 import { SRLWrapper } from "simple-react-lightbox" 
 const images = [
     {id : '1', imageName : <StaticImage src="./gallery-images/img1.jpg" height = {300} width = {300}></StaticImage>, src : "./gallery-images/img1.jpg",  tag : "temp"},
@@ -21,6 +22,7 @@ const Gallery = () => {
 useEffect(
     () => {
         tag == 'all' ? setFilteredImages(images) : setFilteredImages(images.filter(image => image.tag == tag))
+        Aos.init({duration:1000})
     }, [tag]
 )
 return (
@@ -45,7 +47,7 @@ return (
    {
      filteredImages.map(image => 
      <div key= {image.id} className="image-card">
-      <a href = {image.src}> {image.imageName} </a>
+      <a href = {image.src}> <div>{image.imageName}</div> </a>
          </div>
       ) }
      </div>
@@ -56,6 +58,6 @@ return (
 }
 
 const TagButton = ({name, handleSetTag}) => {
-return <button className = "tag" onClick={()=> handleSetTag(name)}>{name.toUpperCase()}</button>
+return <button className = "tag" data-aos="fade-left" onClick={()=> handleSetTag(name)}>{name.toUpperCase()}</button>
 }
 export default Gallery

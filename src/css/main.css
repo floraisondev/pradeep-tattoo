@@ -660,6 +660,7 @@ background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
   line-height: 1.5; 
   margin : 1.2rem auto;
   font-family: Montserrat;
+  text-align: center;
 }
 
 @media(max-width : 768px){
