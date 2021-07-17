@@ -13,5 +13,15 @@ export const questions = [
     id: 3,
     question : "3. Tips for after care?",
     answer : "Yes, we use toxic free ink which is imported from the US"
-}    
+},
+{
+    id: 4,
+    question : "3. Tips for after care?",
+    answer : "Yes, we use toxic free ink which is imported from the US"
+},
+{
+    id: 5,
+    question : "3. Tips for after care?",
+    answer : "Yes, we use toxic free ink which is imported from the US"
+}      
 ]

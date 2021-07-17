@@ -15,6 +15,21 @@ const images = [
     {id : '9', imageName :  <StaticImage src="./gallery-images/img9.jpg" height = {300} width = {300}></StaticImage>, src : "./gallery-images/img9.jpg", tag : "temp"},
     {id : '10', imageName :  <StaticImage src="./gallery-images/img10.jpg" height = {300} width = {300}></StaticImage>,src : "./gallery-images/img10.jpg", tag : "celeb"},
 ]
+
+const addTagName = (name) =>{
+let label;
+    name == "all" ?
+    label = "All" :
+    name == "temp" ?
+    label = "Temporary Tattoos" :
+    label == "perm" ?
+    label = "Permanent Tattoos" :
+    label == "celeb" ? 
+    label = "Celebrity Tattoos" :
+    label = "Sketches"
+
+    return label;
+}
 const Gallery = () => {
     const [tag , setTag] = useState('all')
     const [filteredImages, setFilteredImages] = useState([])
@@ -28,9 +43,9 @@ useEffect(
 return (
     <div style = {{
         background : "linear-gradient(239.94deg, #201f1f -12.77%, #000000 102.42%)",
-        height : "100vh",
+        height : "auto",
+        minHeight:"100vh",
         display : "flex",
-        overflowY : "scroll",
         flexDirection : "column"
     }}>
     <div className="tags">
@@ -38,6 +53,7 @@ return (
     <TagButton name = "temp" handleSetTag = {setTag}/>
     <TagButton name = "perm" handleSetTag = {setTag}/>
     <TagButton name = "celeb" handleSetTag = {setTag}/>
+    <TagButton name = "sketch" handleSetTag = {setTag}/>
     </div>
     <div>
         
@@ -58,6 +74,6 @@ return (
 }
 
 const TagButton = ({name, handleSetTag}) => {
-return <button className = "tag" data-aos="fade-left" onClick={()=> handleSetTag(name)}>{name.toUpperCase()}</button>
+return <button className = "tag" data-aos="fade-left" onClick={()=> handleSetTag(name)}>{addTagName(name)}</button>
 }
 export default Gallery

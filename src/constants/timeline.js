@@ -6,25 +6,31 @@ import {BsFillCircleFill, BsCaretLeft} from "react-icons/bs"
 const data = [
   {
     id: 1,
-    title : "Working with Celebrities",
-    image: <StaticImage className="timeline-image" src="../images/pradeep-actor.jpg" width = {450} height = {300}></StaticImage>,
+    title : "Working with Sanjay Dutt",
+    image: <StaticImage className="timeline-image" src="../images/pradeep-sanjay.jpeg" width = {440} height={500}></StaticImage>,
     content: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`
   },
   {
     id: 2,
-    title : "Working with Celebrities",
+    title : "Working with Yash",
     image: <StaticImage  className = "timeline-image" src="../images/pradeep-yash.jpg" width = {450} height={300}></StaticImage>,
+    content: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`
+  },
+  {
+    id: 3,
+    title : "Working with Puneeth Rajkumar",
+    image: <StaticImage  className = "timeline-image" src="../images/pradeep-actor.jpg" width = {450} height={300}></StaticImage>,
     content: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`
   },
 ]
 const timeline =  data.map(link => {
   return (
-    <li key={link.id}>
+    <li key={link.id} data-aos= "fade-up" style= {{ marginBottom: "4rem"}}>
       <BsFillCircleFill className="dot"></BsFillCircleFill>
       <BsCaretLeft className="timeline-arrow"></BsCaretLeft>
-      <h2 className="timeline-title" data-aos= "fade-up">{link.title}</h2>
-      <div data-aos= "fade-up">{link.image}</div>
-      <p className="timeline-content" data-aos= "fade-up">{link.content}</p>
+      <h2 className="timeline-title">{link.title}</h2>
+      <div>{link.image}</div>
+      <p className="timeline-content">{link.content}</p>
     </li>
   )
 })

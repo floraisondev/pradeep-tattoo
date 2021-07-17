@@ -2,6 +2,7 @@ import React, {useEffect} from "react"
 import "../css/main.css"
 import Layout from "../components/Layout"
 import Accordion from "../components/Accordion"
+import Footer from "../components/Footer"
 import Aos from "aos"
 
 const Contact = () => {    
@@ -9,8 +10,9 @@ const Contact = () => {
     Aos.init({duration:1000})
 }) 
     return(
+      <>
   <Layout>
-<section style = {{background : "#000", height: "73vh", overflowY : "scroll"}} className="contact-page">
+<section style = {{background : "#000", height: "auto", minHeight: "75vh"}} className="contact-page">
 <Accordion />
  <div className="address">
    <div className="mrb25" data-aos= "fade-up">
@@ -27,7 +29,10 @@ const Contact = () => {
    </div>
  </div>
  </section>
+ <Footer />
 </Layout>
+
+</>
     )
 }
 export default Contact

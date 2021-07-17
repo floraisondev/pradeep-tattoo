@@ -4,6 +4,7 @@ import Hero from "../components/sections/hero"
 import Speciality from "../components/sections/speciality"
 import LetsGetWorking from "../components/sections/letsGetWorking"
 import AboutSection from "../components/sections/aboutSection"
+import Footer from "../components/Footer"
 import "@fontsource/oswald"
 import "@fontsource/oswald/700.css"
 import "@fontsource/montserrat"
@@ -16,6 +17,7 @@ const IndexPage = () => {
       <Speciality />
       <AboutSection />
       <LetsGetWorking />
+      <Footer />
      </Layout>
   )
 }

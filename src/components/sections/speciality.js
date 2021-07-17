@@ -11,7 +11,7 @@ const Speciality = () => {
         <div>
             <article>
                 <div className="underline"> </div>
-                <div className="section-center">
+                <div className="section-center" data-aos="fade-up">
                 <div className="yellow-ellipse">
                 <svg width="167" height="167" 
                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 167 167" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,8 +19,8 @@ const Speciality = () => {
                </svg>
                 </div> 
                <div className="speciality-title-container">
-               <h2 className="speciality-title" data-aos="fade-left">My</h2>
-               <h1 className="speciality-title" data-aos="fade-left">Speciality</h1>
+               <h2 className="speciality-title">My</h2>
+               <h1 className="speciality-title">Speciality</h1>
                </div>  
             </div>    
             </article>

@@ -98,7 +98,7 @@ Variables
     font-size: 1.25rem;
   }
   h4 {
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-family: Oswald;
   }
   p {
@@ -480,6 +480,9 @@ Variables
     margin-top: 1.25rem;
   }
   
+ .logo-desktop{
+   display: none;
+ }
   @media screen and (min-width: 992px) {
     .hero::before {
       content: "";
@@ -509,6 +512,13 @@ Variables
       top: 1%;
       left : 5%;
 
+    }
+    .logo-mobile{
+      display : none;
+    }
+    .logo-desktop{
+      display: inline-block;
+      margin : 0 auto;
     }
   }
   @media screen and (min-width: 1170px) {
@@ -606,6 +616,8 @@ Variables
 .timeline-image{
   margin : 1.2rem 3rem;
 }
+
+
 
 @media screen and (max-width: 676px) {
   .speciality-container{
@@ -711,8 +723,6 @@ image-card {
     top: 5rem;
     width: 100%;
     z-index: 100;
-    background: #724a00;
-    opacity: 0.8;
 }
 
 @media(max-width : 658px){
@@ -723,11 +733,12 @@ image-card {
 
 
 .tag{
-  color : #000000;
-  background : #ffa700;
+  color : #ffa700;
+  background-color: #000000;
+  border : 3px solid  #ffa700;
   font-family: Montserrat;
   text-transform: uppercase;
-  padding : 0.5em 2.5em;
+  padding : 1em 2.5em;
   border-radius: 20px;
   border: none;
   margin : 20px;
@@ -813,7 +824,7 @@ image-card {
 
   @media(min-width : 1060px){
     .about-para{
-      max-width: 65%;
+      max-width: 60%;
     }
   }
   .about-title{

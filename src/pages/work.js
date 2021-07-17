@@ -2,6 +2,7 @@ import React from "react"
 import "../css/main.css"
 import Gallery from "../components/gallery"
 import Layout from "../components/Layout"
+import Footer from "../components/Footer"
 import SimpleReactLightbox from "simple-react-lightbox"
 const Work = () => {    
  
@@ -10,7 +11,7 @@ const Work = () => {
   <SimpleReactLightbox>
   <Gallery />
   </SimpleReactLightbox>
-
+<Footer />
     </Layout>
     )
 }

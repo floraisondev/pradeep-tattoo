@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import {
   FaFacebookSquare,
   FaLinkedin,
@@ -6,7 +6,7 @@ import {
   FaBehanceSquare,
   FaTwitterSquare,
 } from "react-icons/fa"
-
+import Aos from "aos"
 const data = [
   {
     id: 1,
@@ -45,7 +45,10 @@ const links = data.map(link => {
 })
 
 export default ({ styleClass }) => {
+  useEffect(()=>{
+    Aos.init({duration:1000})
+})
   return (
-    <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>
+    <ul className={`social-links ${styleClass ? styleClass : ""}`} data-aos="zoom-in-up">{links}</ul>
   )
 }

@@ -16,7 +16,7 @@ const Accordion = () => {
     }
  return(
     <div className="accordion">
-      <p style={{ textAlign :"center"}}>FAQ</p>
+       <h4 className= "title-class" style= {{ textAlign: "center"}} data-aos="fade-up">FAQs</h4>
          {questions.map((item, index) => {
            return(
              <div className="acc-item" data-aos="fade-up" onClick={() => toggle(index)}>
