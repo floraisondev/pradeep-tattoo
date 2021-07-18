@@ -11,7 +11,7 @@ const Speciality = () => {
         <div>
             <article>
                 <div className="underline"> </div>
-                <div className="section-center" data-aos="fade-up">
+                <div className="section-center">
                 <div className="yellow-ellipse">
                 <svg width="167" height="167" 
                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 167 167" fill="none" xmlns="http://www.w3.org/2000/svg">

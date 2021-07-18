@@ -21,7 +21,14 @@ const About = () => {
         <h1 className="speciality-title about-title" data-aos= "fade-up">About me</h1>
         </div>
        <div className = "about-container"> 
-      <p className="about-para" data-aos= "fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  </p>      
+      <p className="about-para" data-aos= "fade-up">I have over seven years of experience in this industry and
+my goal is to give quality output. Experience speaks for
+me, working with great artists in the film industry has given
+me the confidence and motivation to achieve anything. The major movies I have worked on are Bhajarangi, Gajakesari,
+Mr and Mrs Ramachari, Ranavikrama, Uppi2, Jaggu
+Daada, Masterpiece, Jaguar, Rajasimha, Ragad, KGF1,
+Yuvarathna, KGF2, Kabza, and so on. I specialize in
+temporary tattoos and tattoos for kids too! </p>      
      </div>
       </div>
     </div>

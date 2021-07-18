@@ -5,6 +5,7 @@ import Accordion from "../components/Accordion"
 import Footer from "../components/Footer"
 import Aos from "aos"
 
+
 const Contact = () => {    
   useEffect(()=>{
     Aos.init({duration:1000})
@@ -17,15 +18,16 @@ const Contact = () => {
  <div className="address">
    <div className="mrb25" data-aos= "fade-up">
      <h4 className= "title-class">Studio Address</h4>
-     <p>205, Block 5, Skyline City Appt,<br/> Chandralyout
-      Bengaluru. 560073<br/>
-      Contact : +(91) 982564322</p>
+     <p>  #8/14A, 1st Floor, 2nd Main, 2nd Stage,<br/>
+      Attiguppe, Vijayanagar,<br/>
+      Bangalore 560040.<br/>
+      Land Mark: Metro pillar Number 356</p>
    </div>
    <div className="mrb25" data-aos= "fade-up">
-   <h4 className= "title-class">Permanent Adress</h4>
-     <p>205, Block 5, Skyline City Appt<br/>
-     Chandralyout, Bengaluru. 560073<br/>
-     Contact : +(91) 982564322</p>
+   <h4 className= "title-class">Personal Contact</h4>
+     <p>Phone Number: +91 7348879846<br/>
+    Whatsapp Number : +91 9740611047<br/>
+    Email : pradeeptattoostudio@gmail.com</p>
    </div>
  </div>
  </section>

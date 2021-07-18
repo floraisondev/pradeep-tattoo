@@ -213,15 +213,15 @@ Variables
   /* social links */
   .social-links {
     margin: 0 2rem;
-    width: 15rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .social-link {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     color: rgb(168, 168, 168);
     transition: var(--transition);
   }
+ 
   .social-link:hover {
     color: #ffa700;
   }
@@ -371,6 +371,7 @@ Variables
   }
   .sidebar-icons{
     color: #fff;
+    margin: 15px;
   }
   @media screen and (min-width: 992px) {
     .sidebar {
@@ -621,7 +622,28 @@ Variables
 
 @media screen and (max-width: 676px) {
   .speciality-container{
-    width: 85vw;
+    width: 93%;
+  }
+  .timeline-image{
+    margin : 0
+  }
+  .timeline-content{
+    margin : 1rem;
+    max-width: 100%;
+  }
+  .timeline-title{
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-top: -25px;
+  }
+
+  .timeline-arrow,.dot{
+    height : 20px;
+    width: 20px;
+  }
+
+  .dot{
+    margin-left: -12px;
   }
 }
 
@@ -678,6 +700,9 @@ background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
 @media(max-width : 768px){
   .end-content{
     letter-spacing: 0px;
+  }
+  .end-title{
+    font-size: 1rem;
   }
 }
 
@@ -837,7 +862,8 @@ image-card {
     background: #2b2929;
     box-shadow: inset -9px -9px 18px #222020,
                 inset 9px 9px 18px #343232;
-    padding: 1em 2.5em;    
+    padding: 1em 2.5em;  
+    line-height: 1.75;  
   }
  
   .sanjay-img{

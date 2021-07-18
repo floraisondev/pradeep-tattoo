@@ -8,19 +8,33 @@ const data = [
     id: 1,
     title : "Working with Sanjay Dutt",
     image: <StaticImage className="timeline-image" src="../images/pradeep-sanjay.jpeg" width = {440} height={500}></StaticImage>,
-    content: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`
+    content: `Working with Sanjay Dutt Sir was one of the best
+    moments of my career. It was for the movie KGF, and
+    my work will be put up in the next chapter of the film. I
+    am proud to share my experience with one of the
+    greatest artists of the film industry.
+    `
   },
   {
     id: 2,
-    title : "Working with Yash",
+    title : "Working with ‘Rocking Star’ Yash ",
     image: <StaticImage  className = "timeline-image" src="../images/pradeep-yash.jpg" width = {450} height={300}></StaticImage>,
-    content: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`
+    content: `Working with Rocking Star Yash takes me back in
+    time. I have worked with that amazing actor for many
+    films, right from the movie ‘Gajakesari’, to
+    ‘Masterpiece’, to ‘Mr and Mrs Ramahcari’, and the
+    famed movie KGF. It has been a blessing 
+    to work with such great people in the industry.`
   },
   {
     id: 3,
-    title : "Working with Puneeth Rajkumar",
+    title : "Working with Appu Sir",
     image: <StaticImage  className = "timeline-image" src="../images/pradeep-actor.jpg" width = {450} height={300}></StaticImage>,
-    content: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`
+    content: `Working with Puneeth Rajkumar Sir has been an
+    honour. As being one of the greatest human beings in
+    the industry, I am always fortunate to have worked with
+    him. ‘Yuvarathna’ was one of the movies I worked on
+    with him.`
   },
 ]
 const timeline =  data.map(link => {

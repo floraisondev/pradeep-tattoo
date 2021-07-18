@@ -26,16 +26,12 @@ const LetsGetWorking = () => {
                  }}>Working!</span></h1>
                 
                 </div>  
-               <p className="end-content">I am a no, 1 Face and body Fx temporary 
-                   tattoo artist too, in Bangalore.
-                   I use USA products which the FDA has
-                   approved, non toxic tattoo inks to 
-                    celebrity, kids and clients.
-                    I am a no, 1 Face and body Fx temporary 
-                   tattoo artist too, in Bangalore.
-                   I use USA products which the FDA has
-                   approved, non toxic tattoo inks to 
-                    celebrity, kids and clients.
+               <p className="end-content">I am a no 1 Face and body FX temporary 
+                   tattoo artist in Bangalore.
+                   I use USA products with FDA 
+                   approved non toxic tattoo inks for all my clients.
+                   Book now to get the tattoo you've always wanted !
+                   You will love the results !
                     </p>
                     <Link to="/contact/"> <button className="book-now-btn">Book Now</button></Link>   
      </article>  
