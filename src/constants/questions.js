@@ -12,7 +12,7 @@ export const questions = [
 {
     id: 3,
     question : "3. Tips for after care?",
-    answer : "Yes, we use toxic free ink which is imported from the US"
+    answer : "Apply any type of petroleum jelly, three times a day to get the best quality of your tattoo."
 },
 // {
 //     id: 4,

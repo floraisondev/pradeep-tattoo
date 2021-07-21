@@ -212,7 +212,8 @@ Variables
   
   /* social links */
   .social-links {
-    margin: 0 2rem;
+    margin: 0 5rem;
+    width: 10rem;
     display: flex;
     justify-content: space-around;
   }
@@ -704,6 +705,9 @@ background: linear-gradient(0deg, rgb(254, 204, 103) 0%, rgb(255, 221, 9) 100%);
   .end-title{
     font-size: 1rem;
   }
+  .lets-responsive{
+    font-size: 1.3rem;
+  }
 }
 
 /* ===============
@@ -736,6 +740,7 @@ Gallery
 } 
 image-card {
   padding : 5px;
+ 
 }
 
 .tags {
@@ -750,7 +755,7 @@ image-card {
     z-index: 100;
 }
 
-@media(max-width : 658px){
+@media(max-width : 755px){
   .tag{
    display : none;
   }
@@ -770,12 +775,44 @@ image-card {
   font-size: 11px;
 }
 
+.active{
+  color : #000;
+  background : #ffa700;
+  font-weight : bold;
+}
 .tag:hover{
   opacity: 1;
 }
 
+.dropdown{
+  display: none;
+}
 
+@media(max-width: 755px){
+.dropdown{
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+}
+.tag-dropdown{
+  height : 30px;
+  width: 190px;
+  margin : 10px;
+  border-radius: 7px;
+  text-align: center;
+  background:transparent;
+  color : #ffa700;
+  border : 1px solid #ffa700;
+  font-family: Montserrat;
+  padding : 3px;
+}
  
+.tag-dropdown *{
+  background : transparent;
+}
+
+
 /*
   ===============
   Footer
@@ -861,8 +898,8 @@ image-card {
     background: #2b2929;
     box-shadow: inset -9px -9px 18px #222020,
                 inset 9px 9px 18px #343232;
-    padding: 1em 2.5em;  
-    line-height: 1.75;  
+   line-height: 1.5;
+   padding : 1.2em;
   }
  
   .sanjay-img{

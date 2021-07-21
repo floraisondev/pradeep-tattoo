@@ -21,7 +21,7 @@ const LetsGetWorking = () => {
             }}>
             
                  <div className="end-title">
-                 <h1 className="speciality-title">Let's Get <span style={{
+                 <h1 className="speciality-title lets-responsive">Let's Get <span style={{
                      color : "#ffa700"
                  }}>Working!</span></h1>
                 

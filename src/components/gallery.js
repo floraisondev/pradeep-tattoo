@@ -3,8 +3,9 @@ import React, {useEffect, useState} from "react"
 import "../css/main.css"
 import Aos from "aos"
 import { SRLWrapper } from "simple-react-lightbox" 
+import {Masonry, ResponsiveMasonry} from "react-responsive-masonry"
 const images = [
-    {id : '1', imageName : <StaticImage src="./gallery-images/img1.jpg"></StaticImage>, src : "./gallery-images/img1.jpg",  tag : "perm"},
+    // {id : '1', imageName : <StaticImage src="./gallery-images/img1.jpg"></StaticImage>, src : "./gallery-images/img1.jpg",  tag : "perm"},
     {id : '2', imageName :  <StaticImage src="./gallery-images/img2.jpg"></StaticImage>, src : "./gallery-images/img2.jpg", tag : "perm"},
     {id : '3', imageName :  <StaticImage src="./gallery-images/img3.jpg"></StaticImage>, src : "./gallery-images/img3.jpg", tag : "perm"},
     {id : '4', imageName :  <StaticImage src="./gallery-images/img4.jpg"></StaticImage>, src : "./gallery-images/img4.jpg", tag : "perm"},
@@ -23,7 +24,7 @@ const images = [
     {id : '17', imageName :  <StaticImage src="./gallery-images/img17.jpg"></StaticImage>, src : "./gallery-images/img17.jpg", tag : "perm"},
     {id : '18', imageName :  <StaticImage src="./gallery-images/img18.jpg"></StaticImage>, src : "./gallery-images/img18.jpg", tag : "perm"},
     {id : '19', imageName :  <StaticImage src="./gallery-images/img19.jpg"></StaticImage>, src : "./gallery-images/img19.jpg", tag : "perm"},
-    {id : '20', imageName :  <StaticImage src="./gallery-images/img20.jpg"></StaticImage>,src : "./gallery-images/img20.jpg", tag : "perm"},
+    {id : '20', imageName :  <StaticImage src="./gallery-images/img20.jpeg"></StaticImage>,src : "./gallery-images/img20.jpeg", tag : "perm"},
     {id : '21', imageName : <StaticImage src="./gallery-images/img21.jpg"></StaticImage>, src : "./gallery-images/img21.jpg",  tag : "perm"},
     {id : '22', imageName :  <StaticImage src="./gallery-images/img22.jpg"></StaticImage>, src : "./gallery-images/img22.jpg", tag : "perm"},
     {id : '23', imageName :  <StaticImage src="./gallery-images/img23.jpg"></StaticImage>, src : "./gallery-images/img23.jpg", tag : "perm"},
@@ -68,7 +69,7 @@ const images = [
     {id : '62', imageName :  <StaticImage src="./gallery-images/img62.jpg"></StaticImage>, src : "./gallery-images/img62.jpg", tag : "celeb"},
     {id : '63', imageName :  <StaticImage src="./gallery-images/img63.jpg"></StaticImage>, src : "./gallery-images/img63.jpg", tag : "celeb"},
     {id : '64', imageName :  <StaticImage src="./gallery-images/img64.jpg"></StaticImage>, src : "./gallery-images/img64.jpg", tag : "celeb"},
-    {id : '65', imageName :  <StaticImage src="./gallery-images/img65.jpg"></StaticImage>, src : "./gallery-images/img65.jpg", tag : "celeb"},
+    {id : '65', imageName :  <StaticImage src="./gallery-images/img65.png"></StaticImage>, src : "./gallery-images/img65.png", tag : "celeb"},
     {id : '66', imageName :  <StaticImage src="./gallery-images/img66.jpg"></StaticImage>, src : "./gallery-images/img66.jpg", tag : "celeb"},
     {id : '67', imageName :  <StaticImage src="./gallery-images/img67.jpg"></StaticImage>, src : "./gallery-images/img67.jpg", tag : "celeb"},
     {id : '68', imageName :  <StaticImage src="./gallery-images/img68.jpg"></StaticImage>, src : "./gallery-images/img68.jpg", tag : "celeb"},
@@ -79,14 +80,14 @@ const images = [
     {id : '73', imageName :  <StaticImage src="./gallery-images/img73.jpg"></StaticImage>, src : "./gallery-images/img73.jpg", tag : "sketch"},
     {id : '74', imageName :  <StaticImage src="./gallery-images/img74.jpg"></StaticImage>, src : "./gallery-images/img74.jpg", tag : "sketch"},
     {id : '75', imageName :  <StaticImage src="./gallery-images/img75.jpg"></StaticImage>, src : "./gallery-images/img75.jpg", tag : "sketch"},
-    {id : '76', imageName :  <StaticImage src="./gallery-images/img76.jpg"></StaticImage>, src : "./gallery-images/img76.jpg", tag : "sketch"},
-    {id : '77', imageName :  <StaticImage src="./gallery-images/img77.jpg"></StaticImage>, src : "./gallery-images/img77.jpg", tag : "sketch"},
-    {id : '78', imageName :  <StaticImage src="./gallery-images/img78.jpg"></StaticImage>, src : "./gallery-images/img78.jpg", tag : "sketch"},
-    {id : '79', imageName :  <StaticImage src="./gallery-images/img79.jpg"></StaticImage>, src : "./gallery-images/img79.jpg", tag : "sketch"},
-    {id : '80', imageName :  <StaticImage src="./gallery-images/img80.jpg"></StaticImage>,src : "./gallery-images/img80.jpg", tag : "sketch"},
-    {id : '81', imageName : <StaticImage src="./gallery-images/img81.jpg"></StaticImage>, src : "./gallery-images/img81.jpg",  tag : "sketch"},
-    {id : '82', imageName :  <StaticImage src="./gallery-images/img82.jpg"></StaticImage>, src : "./gallery-images/img82.jpg", tag : "sketch"},
-    {id : '83', imageName :  <StaticImage src="./gallery-images/img83.jpg"></StaticImage>, src : "./gallery-images/img83.jpg", tag : "sketch"},
+    {id : '76', imageName :  <StaticImage src="./gallery-images/img76.png"></StaticImage>, src : "./gallery-images/img76.png", tag : "sketch"},
+    {id : '77', imageName :  <StaticImage src="./gallery-images/img77.png"></StaticImage>, src : "./gallery-images/img77.png", tag : "sketch"},
+    {id : '78', imageName :  <StaticImage src="./gallery-images/img78.png"></StaticImage>, src : "./gallery-images/img78.png", tag : "sketch"},
+    {id : '79', imageName :  <StaticImage src="./gallery-images/img79.png"></StaticImage>, src : "./gallery-images/img79.png", tag : "sketch"},
+    {id : '80', imageName :  <StaticImage src="./gallery-images/img80.png"></StaticImage>,src : "./gallery-images/img80.png", tag : "sketch"},
+    {id : '81', imageName : <StaticImage src="./gallery-images/img81.png"></StaticImage>, src : "./gallery-images/img81.png",  tag : "sketch"},
+    {id : '82', imageName :  <StaticImage src="./gallery-images/img82.png"></StaticImage>, src : "./gallery-images/img82.png", tag : "sketch"},
+    {id : '83', imageName :  <StaticImage src="./gallery-images/img83.png"></StaticImage>, src : "./gallery-images/img83.png", tag : "sketch"},
     {id : '84', imageName :  <StaticImage src="./gallery-images/img84.jpg"></StaticImage>, src : "./gallery-images/img84.jpg", tag : "sketch"},
     {id : '85', imageName :  <StaticImage src="./gallery-images/img85.jpg"></StaticImage>, src : "./gallery-images/img85.jpg", tag : "sketch"},
     {id : '86', imageName :  <StaticImage src="./gallery-images/img86.jpg"></StaticImage>, src : "./gallery-images/img86.jpg", tag : "sketch"},
@@ -107,9 +108,9 @@ let label;
     return label;
 }
 const Gallery = () => {
-    const [tag , setTag] = useState('all')
-    const [filteredImages, setFilteredImages] = useState([])
-
+const [tag , setTag] = useState('all')
+const [filteredImages, setFilteredImages] = useState([])
+const columnsBreakPoints = { 350: 1, 750: 2, 900: 3 }
 useEffect(
     () => {
         tag == 'all' ? setFilteredImages(images) : setFilteredImages(images.filter(image => image.tag == tag))
@@ -125,29 +126,46 @@ return (
         flexDirection : "column"
     }}>
     <div className="tags">
-    <TagButton name = "all" handleSetTag = {setTag}/>
-    <TagButton name = "temp" handleSetTag = {setTag}/>
-    <TagButton name = "perm" handleSetTag = {setTag}/>
-    <TagButton name = "celeb" handleSetTag = {setTag}/>
-    <TagButton name = "sketch" handleSetTag = {setTag}/>
+    <TagButton name = "all" handleSetTag = {setTag} tagActive={ tag === 'all' ? true : false}/>
+    <TagButton name = "temp" handleSetTag = {setTag} tagActive={ tag === 'temp' ? true : false}/>
+    <TagButton name = "perm" handleSetTag = {setTag} tagActive={ tag === 'perm' ? true : false}/>
+    <TagButton name = "celeb" handleSetTag = {setTag} tagActive={ tag === 'celeb' ? true : false}/>
+    <TagButton name = "sketch" handleSetTag = {setTag} tagActive={ tag === 'sketch' ? true : false}/>
     </div>
-   
+   <div className="dropdown">
+     <TagDropdown name = {tag} handleSetTag={setTag}/>
+   </div>
    <SRLWrapper> 
-    <div className="container" data-aos = "fade-up">
+     <div className="container" data-aos = "fade-up"> 
+    {/* <ResponsiveMasonry columnsCountBreakPoints={columnsBreakPoints}>
+    <Masonry columnsCount={4} gutter = {4}> */}
    {
      filteredImages.map(image => 
      <div key= {image.id} className="image-card">
       <a href = {image.src}> <div>{image.imageName}</div> </a>
          </div>
       ) }
-     </div>
+    {/* </Masonry>
+    </ResponsiveMasonry> */}
+      </div> 
      </SRLWrapper>
     </div>
   
 )
 }
 
-const TagButton = ({name, handleSetTag}) => {
-return <button className = "tag" data-aos="fade-left" onClick={()=> handleSetTag(name)}>{addTagName(name)}</button>
+const TagButton = ({name, handleSetTag, tagActive}) => {
+return <button className = {`tag ${ tagActive ? 'active' : null}`}  onClick={()=> handleSetTag(name)}>{addTagName(name)}</button>
+}
+
+const TagDropdown = ({name, handleSetTag})  => {
+    return  ( <select value={name} onChange={(e)=>handleSetTag(e.target.value)} className="tag-dropdown">
+    <option value="all" className="drop-option">All</option>
+    <option value="temp" className="drop-option">Temporary Tattoos</option>
+    <option value="perm"  className="drop-option">Permanent Tattoos</option>
+    <option value="celeb"  className="drop-option">Celebrity</option>
+    <option value="sketch"  className="drop-option">Sketches</option>
+</select>
+    )
 }
 export default Gallery

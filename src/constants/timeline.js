@@ -18,7 +18,7 @@ const data = [
   {
     id: 2,
     title : "Working with ‘Rocking Star’ Yash ",
-    image: <StaticImage  className = "timeline-image" src="../images/pradeep-yash.jpg" width = {450} height={300}></StaticImage>,
+    image: <StaticImage  className = "timeline-image" src="../images/img59.jpg" width = {460} height={350}></StaticImage>,
     content: `Working with Rocking Star Yash takes me back in
     time. I have worked with that amazing actor for many
     films, right from the movie ‘Gajakesari’, to
