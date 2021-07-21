@@ -10,7 +10,7 @@ const About = () => {
     <>  
     <div className="about-page">
     <div className="sanjay-img">
-    <StaticImage src="../../images/sanjay-dutt.png" height={515} width={700} /> 
+    <StaticImage src="../../images/sanjay-dutt.png" height={497} width={700} /> 
     </div>
     <div className="underline" style=  {{ marginTop : "-3rem"}}> </div> 
     <div className="section-center" style={{ position: "relative"}}> 

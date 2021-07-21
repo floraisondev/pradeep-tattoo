@@ -91,6 +91,19 @@ const images = [
     {id : '84', imageName :  <StaticImage src="./gallery-images/img84.jpg"></StaticImage>, src : "./gallery-images/img84.jpg", tag : "sketch"},
     {id : '85', imageName :  <StaticImage src="./gallery-images/img85.jpg"></StaticImage>, src : "./gallery-images/img85.jpg", tag : "sketch"},
     {id : '86', imageName :  <StaticImage src="./gallery-images/img86.jpg"></StaticImage>, src : "./gallery-images/img86.jpg", tag : "sketch"},
+    {id : '87', imageName :  <StaticImage src="./gallery-images/img87.jpg"></StaticImage>, src : "./gallery-images/img87.jpg", tag : "temp"},
+    {id : '88', imageName :  <StaticImage src="./gallery-images/img88.png"></StaticImage>, src : "./gallery-images/img88.png", tag : "temp"},
+    {id : '89', imageName :  <StaticImage src="./gallery-images/img89.png"></StaticImage>, src : "./gallery-images/img89.png", tag : "temp"},
+    {id : '90', imageName :  <StaticImage src="./gallery-images/img90.JPG"></StaticImage>, src : "./gallery-images/img90.JPG", tag : "temp"},
+    {id : '91', imageName :  <StaticImage src="./gallery-images/img91.JPG"></StaticImage>, src : "./gallery-images/img91.JPG", tag : "temp"},
+    {id : '92', imageName :  <StaticImage src="./gallery-images/img92.jpg"></StaticImage>, src : "./gallery-images/img92.jpg", tag : "temp"},
+    {id : '93', imageName :  <StaticImage src="./gallery-images/img93.png"></StaticImage>, src : "./gallery-images/img93.png", tag : "temp"},
+    {id : '94', imageName :  <StaticImage src="./gallery-images/img94.png"></StaticImage>, src : "./gallery-images/img94.png", tag : "temp"},
+    {id : '95', imageName :  <StaticImage src="./gallery-images/img95.png"></StaticImage>, src : "./gallery-images/img95.png", tag : "temp"},
+    {id : '96', imageName :  <StaticImage src="./gallery-images/img96.png"></StaticImage>, src : "./gallery-images/img96.png", tag : "temp"},
+    {id : '97', imageName :  <StaticImage src="./gallery-images/img97.png"></StaticImage>, src : "./gallery-images/img97.png", tag : "temp"},
+    {id : '98', imageName :  <StaticImage src="./gallery-images/img98.png"></StaticImage>, src : "./gallery-images/img98.png", tag : "temp"},
+    {id : '99', imageName :  <StaticImage src="./gallery-images/img99.JPG"></StaticImage>, src : "./gallery-images/img99.JPG", tag : "temp"},
 ]
 
 const addTagName = (name) =>{
