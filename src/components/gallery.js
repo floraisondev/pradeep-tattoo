@@ -3,7 +3,6 @@ import React, {useEffect, useState} from "react"
 import "../css/main.css"
 import Aos from "aos"
 import { SRLWrapper } from "simple-react-lightbox" 
-import {Masonry, ResponsiveMasonry} from "react-responsive-masonry"
 const images = [
     // {id : '1', imageName : <StaticImage src="./gallery-images/img1.jpg"></StaticImage>, src : "./gallery-images/img1.jpg",  tag : "perm"},
     {id : '2', imageName :  <StaticImage src="./gallery-images/img2.jpg"></StaticImage>, src : "./gallery-images/img2.jpg", tag : "perm"},
