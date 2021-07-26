@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "pradeep-tattoo",
+    title: "Pradeep Tattoo Zone",
+    siteUrl : "https://app.netlify.com/sites/affectionate-snyder-f83918"
   },
   plugins: [
     "gatsby-plugin-styled-components",
