@@ -14,11 +14,13 @@ const Hero = () => {
                 <div className="underline"> </div>
                     <h1 className="title-class">Pradeep Tattoo Zone</h1>
                    <div style={{ display : "flex"}}> <StaticImage src="../../images/logo-t.png" height={200} width={200} className="logo-desktop"/></div>
-                   <div style={{ display : "flex"}}><StaticImage src="../../images/logo-t.png" height={100} width={100}  className="logo-mobile"/></div>
+                   {/* <div style={{ display : "flex"}}><StaticImage src="../../images/logo-t.png" height={100} width={100}  className="logo-mobile"/></div> */}
                     <h2 className="title-class" data-aos="fade-up">Celebrity Tatoo Artist</h2>
                     <h4 className="subtitle-class">Temporary and Permanent Tattoos</h4>
             </article>
-            <StaticImage src = "../../images/landing-page-girl.png" className="hero-img" /> 
+            <div className="hero-img">
+            <StaticImage src = "../../images/landing-page-girl.png" /> 
+            </div>
         </div>
     </header>
     )

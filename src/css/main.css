@@ -214,7 +214,7 @@ Variables
   .social-links {
     margin: 0 5rem;
     width: 10rem;
-    display: flex;
+    display: flex; 
     justify-content: space-around;
   }
   .social-link {
@@ -469,9 +469,9 @@ Variables
   .hero-info {
     background: #000000;
   }
-  .hero-img {
+  /* .hero-img {
     display: none;
-  }
+  } */
   .hero-info h4 {
     color: #ffa700;
   }
@@ -879,6 +879,9 @@ image-card {
   }
   @media(max-width : 1060px){
     .sanjay-img{
+      display: none;
+    }
+    .hero-img{
       display: none;
     }
   }
