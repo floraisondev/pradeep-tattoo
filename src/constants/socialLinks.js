@@ -21,7 +21,7 @@ const data = [
   {
     id: 3,
     icon: <FaWhatsapp className="social-icon"></FaWhatsapp>,
-    url: "https://api.whatsapp.com/send?phone=9740611047",
+    url: "https://api.whatsapp.com/send?phone=919740611047",
   },
   {
     id: 4,

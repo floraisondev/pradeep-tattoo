@@ -10,7 +10,7 @@ const Footer = () => {
             <h4>copyright&copy;{new Date().getFullYear()}</h4>
             <span>Pradeep Tattoo Zone. All rights reserved </span>
         </div>
-        <div>
+        <div style={{ display:"flex", flexDirection: "column"}}>
     <span>Developed by <a href="https://www.linkedin.com/in/devanshi-tank-b9b386ba/" target="_blank" rel="noopener noreferrer">@DevanshiTank{" "}</a></span>
           <span>Designed by <a href="https://www.behance.net/ronoldanthony" target="_blank" rel="noopener noreferrer">@RonoldAnthony</a></span>
         </div>
