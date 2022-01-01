@@ -12,8 +12,8 @@ const Hero = () => {
         <div className="section-center hero-center">
             <article className="hero-info" data-aos="fade-up">
                 <div className="underline"> </div>
-                    <h1 className="title-class">Pradeep Tattoo Zone</h1>
-                   <div style={{ display : "flex"}}> <StaticImage src="../../images/logo-t.png" height={200} width={200} className="logo-desktop"/></div>
+                    {/* <h1 className="title-class">Pradeep Tattoo Zone</h1> */}
+                   <div style={{ display : "flex"}}> <StaticImage src="../../images/new-logo.jpg" height={600} width={1200} /></div>
                    {/* <div style={{ display : "flex"}}><StaticImage src="../../images/logo-t.png" height={100} width={100}  className="logo-mobile"/></div> */}
                     <h2 className="title-class" data-aos="fade-up">Celebrity Tatoo Artist</h2>
                     <h4 className="subtitle-class">Temporary and Permanent Tattoos</h4>
@@ -24,5 +24,5 @@ const Hero = () => {
         </div>
     </header>
     )
-}
+} 
 export default Hero
