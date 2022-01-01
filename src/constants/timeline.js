@@ -5,6 +5,14 @@ import Aos from "aos"
 import {BsFillCircleFill, BsCaretLeft} from "react-icons/bs"
 const data = [
   {
+    id: 0,
+    title : "Working with Prabhas",
+    image: <StaticImage className="timeline-image" src="../images/pradeep-prabhas.jpg" width = {440} height={500}></StaticImage>,
+    content: `I recently worked with the legend, Prabhas.
+     It was an awesome experience as always and we got to talk a lot about Bahubali and many amazing movies.
+     Overall it was a great experience and a lot of fun`
+  },
+  {
     id: 1,
     title : "Working with Sanjay Dutt",
     image: <StaticImage className="timeline-image" src="../images/pradeep-sanjay.jpeg" width = {440} height={500}></StaticImage>,

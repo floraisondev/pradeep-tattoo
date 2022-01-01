@@ -11,7 +11,7 @@ const data = [
   {
     id: 1,
     icon: <FaInstagram className="social-icon"></FaInstagram>,
-    url: `https://instagram.com/pradeep_tattoo_studio?utm_medium=copy_link`,
+    url: `https://www.instagram.com/pradeeptattoozone/?utm_medium=copy_link`,
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const data = [
   {
     id: 4,
     icon: <MdEmail className="social-icon"></MdEmail>,
-    url: "mailto:pradeeptattoostudio@gmail.com",
+    url: "mailto:pradeeptattoozone46@gmail.com",
   },
   // {
   //   id: 5,
