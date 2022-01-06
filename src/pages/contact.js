@@ -27,7 +27,7 @@ const Contact = () => {
    <h4 className= "title-class">Personal Contact</h4>
      <p>Phone Number: +91 7348879846<br/>
     Whatsapp Number : +91 9740611047<br/>
-    Email : pradeeptattoostudio@gmail.com</p>
+    Email : pradeeptattoozone46@gmail.com</p>
    </div>
  </div>
  </section>
